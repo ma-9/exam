@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link href="./manifest.json">
-    <!-- <link href="./content.js"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    Chrome Extension
+    Chrome Extension 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDIWZo_MtLpiEIoH5YlrWTStNAN_POAd6E",
+        authDomain: "lakshyaexam-91b83.firebaseapp.com",
+        databaseURL: "https://lakshyaexam-91b83.firebaseio.com",
+        projectId: "lakshyaexam-91b83",
+        storageBucket: "lakshyaexam-91b83.appspot.com",
+        messagingSenderId: "558837165558",
+        appId: "1:558837165558:web:c0ea2ce353a7d88da06bd7",
+        measurementId: "G-FNXNGMVJTR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>
